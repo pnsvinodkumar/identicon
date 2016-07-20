@@ -14,10 +14,10 @@ COPY cmd.sh /
 COPY set_proxies /
 COPY unset_proxies /
 
-ENV http_proxy
-ENV https_proxy
-ENV ftp_proxy
-ENV socks_proxy
-ENV no_proxy
+ENV http_proxy ""
+ENV https_proxy ""
+ENV ftp_proxy ""
+ENV socks_proxy ""
+ENV no_proxy ""
 
 CMD ["sh", "/cmd.sh"]
