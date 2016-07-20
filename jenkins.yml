@@ -1,7 +1,7 @@
 identicon:
   build: .
   ports:
-    - "3001:5000"
+    - "3001:9090"
   environment:
     ENV: PROD
   links:
