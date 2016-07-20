@@ -12,4 +12,4 @@ WORKDIR /app
 COPY app /app
 COPY cmd.sh /
 
-CMD ["/cmd.sh"]
+CMD ["sh", "/cmd.sh"]
