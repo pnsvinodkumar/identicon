@@ -1,7 +1,7 @@
 identicon:
   build: .
-  expose:
-    - "8080"
+  ports:
+    - "3001:5000"
   environment:
     ENV: PROD
   links:
