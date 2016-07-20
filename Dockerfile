@@ -14,5 +14,5 @@ COPY cmd.sh /
 COPY set_proxies /
 COPY unset_proxies /
 
-RUN source /unset_proxies
+CMD ["source", "/unset_proxies"]
 CMD ["sh", "/cmd.sh"]
