@@ -10,5 +10,6 @@ elif [ "$ENV" = 'UNIT' ]; then
     exec python "tests.py"
 else
     echo "Running Production Server"
+    source /unset_proxies
     exec uwsgi --http 0.0.0.0:9090 --wsgi-file /app/identicon.py --callable app --stats 0.0.0.0:9191
 fi
